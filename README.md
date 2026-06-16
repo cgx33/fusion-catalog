@@ -1,4 +1,4 @@
-# fusion-demo
+# fusion-catalog
 
 **Backend repository for [fusion.coregraphix.com](https://fusion.coregraphix.com) demo distribution.**
 
@@ -12,7 +12,7 @@ Customer  →  fusion.coregraphix.com  →  click "Download"  →  GitHub Releas
                        ↑
                   fetches catalog.json + READMEs
                        ↑
-              this repo (cgx33/fusion-demo)
+              this repo (cgx33/fusion-catalog)
 ```
 
 If you are a **customer / evaluator**, you do not need to clone this
@@ -38,7 +38,7 @@ to a tag matching the asset's version. See `.gitignore` for the list.
 ## Repo structure
 
 ```
-fusion-demo/
+fusion-catalog/
 ├── README.md                   ← this file
 ├── catalog.json                ← master index (fetched by the website)
 ├── .gitignore                  ← excludes binary assets (live in Releases)
@@ -79,12 +79,12 @@ Tiers 1 + 2 are this repo.
 ## How the website consumes this repo
 
 1. The React app fetches `catalog.json` from
-   `https://raw.githubusercontent.com/cgx33/fusion-demo/main/catalog.json`
+   `https://raw.githubusercontent.com/cgx33/fusion-catalog/main/catalog.json`
 2. For each asset, it computes a download URL from the
    `release_url_template` field in catalog.json + the asset's
    `release_tag` and `filename`
 3. For READMEs / instructions, it fetches the markdown via
-   `https://raw.githubusercontent.com/cgx33/fusion-demo/main/<path>`
+   `https://raw.githubusercontent.com/cgx33/fusion-catalog/main/<path>`
    and renders it inline
 
 This repo's only public-facing role is to feed those fetches. The
