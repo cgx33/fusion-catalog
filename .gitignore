@@ -7,6 +7,8 @@ nano25/setup/firmware/*.jic
 nano25/setup/firmware/*.zip
 nano25/setup/sdcard/*.img
 nano25/setup/sdcard/*.img.gz
+nano25/setup/sdcard/*.img.xz
+nano25/setup/sdcard/*.xz
 
 # Tier 2 demo binaries
 nano25/catalog/*/*.elf
