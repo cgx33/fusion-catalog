@@ -32,13 +32,13 @@ The board boots a Linux system on the FPGA fabric. SSH is enabled by default
 (`192.168.2.15`, user `root`).
 
 ```bash
-# 1. Download glass-cockpit.elf from this catalog entry
+# 1. Download glass_cockpit.elf from this catalog entry
 
 # 2. Push it to the Nano25
-scp glass-cockpit.elf root@<nano25-ip>:/root/
+scp glass_cockpit.elf root@<nano25-ip>:/root/
 
 # 3. Run
-ssh root@<nano25-ip> "chmod +x /root/glass-cockpit.elf && /root/glass-cockpit.elf"
+ssh root@<nano25-ip> "chmod +x /root/glass_cockpit.elf && /root/glass_cockpit.elf"
 ```
 
 The cockpit UI appears on the HDMI output connected to your Nano25.

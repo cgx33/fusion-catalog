@@ -68,7 +68,7 @@
                                                      "manifest_path":  "nano25/catalog/nano25-glass-cockpit-v4.1.0/manifest.json",
                                                      "readme_path":  "nano25/catalog/nano25-glass-cockpit-v4.1.0/README.md",
                                                      "release_tag":  "nano25-glass-cockpit-v4.1.0",
-                                                     "binary_filename":  "glass-cockpit.elf",
+                                                     "binary_filename":  "glass_cockpit.elf",
                                                      "binary_size_kb":  2581,
                                                      "fusion_sdk":  "v4.1.52",
                                                      "requires_setup":  true
