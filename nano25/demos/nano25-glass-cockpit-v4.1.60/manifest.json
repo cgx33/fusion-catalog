@@ -2,7 +2,7 @@
   "id": "glass-cockpit",
   "version": "4.1.60",
   "name": "Avionics Glass Cockpit",
-  "short_description": "Glass cockpit composition: PFD + Engine + Alerts + ND on a single screen.",
+  "short_description": "Glass cockpit composition: PFD + ND + Engine + Alerts on a single screen.",
   "target": "nano25",
   "binary": "glass_cockpit.elf",
   "binary_size_kb": 2584,
