@@ -12,7 +12,7 @@ Customer  →  fusion.coregraphix.com  →  click "Download"  →  GitHub Releas
                        ↑
                   fetches catalog.json + READMEs
                        ↑
-              this repo (cgx33/fusion-catalog)
+              this repo (coregraphix/fusion-catalog)
 ```
 
 If you are a **customer / evaluator**, you do not need to clone this
@@ -70,7 +70,7 @@ fusion-catalog/
 | 0 | Watch a video | Website home page |
 | 1 | Provision your Nano25 (FPGA + Linux SD) | `<target>/setup/` |
 | 2 | Drop additional ELF demos | `<target>/catalog/` |
-| 3 | Download the SDK Starter | [`fusion-sdk`](https://github.com/cgx33/fusion-sdk) releases |
+| 3 | Download the SDK Starter | [`fusion-sdk`](https://github.com/coregraphix/fusion-sdk) releases |
 
 Tier 0 lives on the website only.
 Tier 3 lives in a separate repository.
@@ -79,12 +79,12 @@ Tiers 1 + 2 are this repo.
 ## How the website consumes this repo
 
 1. The React app fetches `catalog.json` from
-   `https://raw.githubusercontent.com/cgx33/fusion-catalog/main/catalog.json`
+   `https://raw.githubusercontent.com/coregraphix/fusion-catalog/main/catalog.json`
 2. For each asset, it computes a download URL from the
    `release_url_template` field in catalog.json + the asset's
    `release_tag` and `filename`
 3. For READMEs / instructions, it fetches the markdown via
-   `https://raw.githubusercontent.com/cgx33/fusion-catalog/main/<path>`
+   `https://raw.githubusercontent.com/coregraphix/fusion-catalog/main/<path>`
    and renders it inline
 
 This repo's only public-facing role is to feed those fetches. The
@@ -136,5 +136,5 @@ not part of this public repository:
 
 ## Cross-references
 
-- Fusion SDK source + packaged releases : [`fusion-sdk`](https://github.com/cgx33/fusion-sdk) (private)
+- Fusion SDK source + packaged releases : [`fusion-sdk`](https://github.com/coregraphix/fusion-sdk) (private)
 - Coregraphix website : [`fusion.coregraphix.com`](https://fusion.coregraphix.com)
