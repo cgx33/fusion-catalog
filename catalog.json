@@ -1,6 +1,6 @@
 {
   "version": "1.4",
-  "updated": "2026-06-17",
+  "updated": "2026-06-18",
   "github_org": "cgx33",
   "github_repo": "fusion-catalog",
   "release_url_template": "https://github.com/{org}/{repo}/releases/download/{tag}/{file}",
@@ -9,7 +9,7 @@
     "latest": {
       "release_tag": "fusion-v4.1.60",
       "version": "4.1.60",
-      "released": "2026-06-17",
+      "released": "2026-06-18",
       "size_mb": 10,
       "release_notes_url": "https://github.com/cgx33/fusion-sdk/releases/tag/fusion-v4.1.60"
     }
@@ -30,7 +30,7 @@
           "instructions_path": "nano25/setup/firmware/README.md",
           "release_tag": "nano25-setup-firmware-v4.1.0",
           "filename": "nano25-setup-firmware-v4.1.0.zip",
-          "size_kb": 4748,
+          "size_kb": 4799,
           "bundle_contents": [
             "README.md",
             "fusion_top_hps.jic",
@@ -62,7 +62,7 @@
           "id": "glass-cockpit",
           "version": "4.1.60",
           "name": "Avionics Glass Cockpit",
-          "short_description": "Glass cockpit composition: PFD + ND + Engine + Alerts on a single screen.",
+          "short_description": "Glass cockpit composition: PFD + Engine + Alerts + ND on a single screen.",
           "screenshot_url": "https://raw.githubusercontent.com/cgx33/fusion-catalog/main/nano25/demos/nano25-glass-cockpit-v4.1.60/screenshot.png",
           "video_url": "https://raw.githubusercontent.com/cgx33/fusion-catalog/main/nano25/demos/nano25-glass-cockpit-v4.1.60/preview.mp4",
           "manifest_path": "nano25/demos/nano25-glass-cockpit-v4.1.60/manifest.json",
