@@ -132,7 +132,7 @@ private `fusion-sdk` repository under `fusion-sdk/demo/`. They are
 not part of this public repository:
 
 - `FUSION_DEMO_STRATEGY.md` — internal strategy, hosting decisions, roadmap
-- `FUSION_DEMO_WEBDESIGN.md` — self-contained brief for the web-designer
+- `fusion-docs/FUSION_CATALOG_WEBDESIGN.md` — self-contained brief for the web-designer
 
 ## Cross-references
 
