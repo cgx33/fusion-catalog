@@ -2,7 +2,7 @@
 echo FPGA Configure...
 
 
-set project_jic="..\golden_top_hps.jic"
+set project_jic="..\fusion_top_hps.jic"
 
 
 REM ########################################################################

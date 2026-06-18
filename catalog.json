@@ -33,7 +33,7 @@
           "size_kb": 4748,
           "bundle_contents": [
             "README.md",
-            "golden_top_hps.jic",
+            "fusion_top_hps.jic",
             "program_qspi_flash/flash_program.bat",
             "program_qspi_flash/flash_erase.bat"
           ],

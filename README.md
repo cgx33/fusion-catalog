@@ -49,7 +49,7 @@ fusion-catalog/
     │   ├── README.md
     │   ├── firmware/           ← Step 1: FPGA bitstream + Quartus scripts
     │   │   ├── README.md
-    │   │   ├── golden_top_hps.jic                  (gitignored, Release asset)
+    │   │   ├── fusion_top_hps.jic                  (gitignored, Release asset)
     │   │   ├── program_qspi_flash/*.bat
     │   │   └── setup-firmware-v0.1.zip             (gitignored, Release asset)
     │   └── sdcard/             ← Step 2: Linux + Fusion image
@@ -115,7 +115,7 @@ When the FPGA design changes (new bitstream) or the OS image changes:
 2. For firmware: rebuild the bundle zip
    ```powershell
    $src = "nano25\setup\firmware"
-   Compress-Archive -Path "$src\golden_top_hps.jic","$src\program_qspi_flash","$src\README.md" -DestinationPath "$src\setup-firmware-vX.Y.zip"
+   Compress-Archive -Path "$src\fusion_top_hps.jic","$src\program_qspi_flash","$src\README.md" -DestinationPath "$src\setup-firmware-vX.Y.zip"
    ```
 3. Bump the corresponding `release_tag` in `catalog.json`
 4. Commit + push the catalog change

@@ -15,7 +15,7 @@ GitHub Release `setup-firmware-v0.1`:
 ```
 setup-firmware-v0.1.zip   (~5 MB compressed)
 ├── README.md                                ← this guide (offline copy)
-├── golden_top_hps.jic                       ← FPGA bitstream + HPS first-stage (~16 MB)
+├── fusion_top_hps.jic                       ← FPGA bitstream + HPS first-stage (~16 MB)
 └── program_qspi_flash/
     ├── flash_program.bat                    ← Windows batch: erase + program QSPI
     └── flash_erase.bat                      ← Windows batch: erase QSPI only
@@ -23,7 +23,7 @@ setup-firmware-v0.1.zip   (~5 MB compressed)
 
 Extract the zip into a working folder. The relative paths between
 the `.jic` and the batch scripts must be preserved (the scripts
-reference `..\golden_top_hps.jic`).
+reference `..\fusion_top_hps.jic`).
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ reference `..\golden_top_hps.jic`).
 3. Click **Hardware Setup** → select `DE25-Nano [USB-1]` → Close
 4. Click **Auto Detect** — the FPGA + QSPI flash chain appears
 5. Select the **QSPI** device → click **Change File** → choose
-   `golden_top_hps.jic` from the extracted folder
+   `fusion_top_hps.jic` from the extracted folder
 6. Check **Program/Configure** for the QSPI device
 7. Click **Start** — wait for "100% (Successful)"
 8. Power-cycle the board — Fusion bitstream now loads automatically
@@ -57,7 +57,7 @@ cd program_qspi_flash
 flash_program.bat
 ```
 
-This runs `quartus_pgm.exe -m jtag -c 1 -o "pvi;..\golden_top_hps.jic"`
+This runs `quartus_pgm.exe -m jtag -c 1 -o "pvi;..\fusion_top_hps.jic"`
 which erases + programs + verifies + initializes the QSPI flash in one shot.
 
 To erase only (revert to blank QSPI):
